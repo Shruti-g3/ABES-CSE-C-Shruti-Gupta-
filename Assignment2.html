@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Seat Book</title>
+    <style>
+        body {
+            background: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: #2d3e50;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 10px 30px;
+        }
+        .navbar img {
+            height: 40px;
+            margin-right: 15px;
+        }
+        .navbar .title {
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+        .card {
+            background: #fff;
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 30px 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #2d3e50;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 18px;
+            display: flex
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
+        }
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #bbb;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .gender-group {
+    display: block;
+    margin-bottom: 10px;
+}
+
+        .btn {
+            display: inline-block;
+            background: #2d3e50;
+            color: #fff;
+            padding: 10px 22px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 1em;
+            margin-top: 10px;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #1a2533;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <img src="bus.png" alt="Bus Logo">
+        <span class="title">Bus Seat Book</span>
+        <br>
+    </div>
+    <div class="card">
+        <h2><b>Welcome to bus booking System</b></h2>
+        <table>
+            <tr>
+                <td rowspan="5"> <h2>User Details</h2></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td style="vertical-align:top; text-align:right;">
+                    <img src="bus3.webp" alt="Bus Logo" width="200px" height="200px">
+                </td>
+            </tr>
+        </table>
+       
+        
+        <!-- add image right side of the user details -->
+
+        <form>
+            <div class="form-group">
+                <label for="username" >User Name:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">User Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div >
+                <label>User Gender</label>
+                <div class="gender-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="city">Select City</label>
+                <select id="city" name="city" required>
+                <option value="city1">City 1</option>   
+                <option value="city2">City 2</option>
+                <option value="city3">City 3</option>
+                <option value="city4">City 4</option>
+                </select> 
+            </div>
+            <a href="nextpage.html" class="btn">Send Book</a>
+        </form>
+    </div>
+</body>
+</html>
