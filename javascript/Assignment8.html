@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3 Cards Example</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #f4f4f4;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 14px;
+      margin-bottom: 15px;
+      color: #666;
+    }
+    img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    <div class="card">
+      <h2>Mobile Phones</h2>
+        <img src="phone.jpeg" alt="phone" />
+      <p>EVERY KIND OF PHONE IS AVAILABLE HERE</p>
+      <a href="mobile.html" class="btn" onclick="showMessage('HTML')">Check</a>
+    </div>
+
+    <div class="card">
+      <h2> TV</h2>
+            <img src="tv.jpg" alt="tv" />
+      <p>EVERY KIND OF TV IS PRESENT HERE</p>
+      <a href="tv.html" class="btn" onclick="showMessage('CSS')">Check</a>
+    </div>
+
+    <div class="card">
+      <h2>GAMING</h2>
+      <img src="gaming.png" alt="gaming" />
+      <p>ALL THE GAMING ITEMS ARE AVAILABLE HERE</p>
+      <a href="game.html" class="btn" onclick="showMessage('JavaScript')">Check</a>
+    </div>
+  </div>
+
+  <script>
+    function showMessage(subject) {
+      alert("You clicked Learn More about " + subject + "!");
+    }
+  </script>
+</body>
+</html>
