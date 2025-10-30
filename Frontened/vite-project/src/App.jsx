@@ -9,12 +9,12 @@ function App() {
 
   return (
     <>
-    <Navbar></Navbar>
-      <Card></Card>
+    <Navbar name="abes"></Navbar>
+      <Card name="Shruti" edu="Web Devloper"></Card>
       <br></br>
-      <Card></Card>
+      <Card name="Shreya" edu="DSA"></Card>
       <br></br>
-      <Card></Card>
+      <Card name="Siddhant" edu="Python" ></Card>
       <br></br>
     </>
   )
