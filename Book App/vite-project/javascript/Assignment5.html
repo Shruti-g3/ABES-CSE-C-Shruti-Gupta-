@@ -1,0 +1,113 @@
+<!-- - button and  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    <style>
+        .bada{
+            display: flex;
+        }
+        .demo{
+            background-color:rgb(212, 165, 209);
+            border:2px solid black;
+            height:300px;
+            width:300px;
+            /* align-items: center;
+            top: 30%;
+            left: 40%; */
+        }
+        .header{
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            margin-top: 5px;
+            
+        }
+        #img1{
+            border-radius: 50%;
+        }
+        .count{
+            font-size: 50px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .footer{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+        span{
+            margin-right: 40px;
+            font-size:larger;
+            font-weight: bold;
+            text-shadow: 2cap;
+        }
+        .demo2{
+            background-color:rgb(201, 176, 199);
+            border:2px solid black;
+            height:300px;
+            width:300px;
+        }
+        .part1{
+            size: 0.5rem;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="bada">
+        <div class="demo">
+        <div class ="header">
+            <img src="counter.webp" alt="" height="50px" width="50px" id="img1">
+            <span>Counter App</span>
+        </div>
+        <div class="main">
+            
+            <p class="count" >0</p>
+              
+
+        </div>
+        <div class="footer">
+            <button onclick="decrement()">-</button>
+            <button onclick="increment()">+</button>
+            
+        </div>
+        </div>
+
+        <div class="demo2">
+            <div class="part1">
+                <img src="nature.jpg" alt="nature image" />
+            </div>
+            <div class="part2">
+                <button onclick="togglevisibility()">Hide</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var count=0;
+        function increment(){
+            if( count>=10){
+                alert("maximum limit reached");
+                return;
+            }
+            count++;
+            document.querySelector(".count").innerHTML=count;
+
+        }
+        function decrement(){
+            if( count<=0){
+                alert("minimum limit reached");
+                return;
+            }
+            count--;
+            document.querySelector(".count").innerHTML=count;
+        }
+    </script>
+    
+</body>
+</html>

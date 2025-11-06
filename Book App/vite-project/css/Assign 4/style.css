@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+.container {
+  width: 100%; /* Full width */
+  margin: 0 auto;
+  background: #fff;
+  width: 100%; 
+}
+
+/* Top Bar */
+.topbar {
+  display: grid;
+  grid-template-columns: 150px 1fr 100px 100px 150px 50px;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  width: 100%; /* Ensure full width */
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2874f0;
+}
+
+.logo small {
+  display: block;
+  font-size: 12px;
+  color: #999;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 0 10px;
+  background: #f0f5ff; /* Light gray background */
+}
+
+.search i {
+  color: #2874f0;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  background: transparent;
+}
+
+.login, .cart, .seller, .more {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Categories */
+.categories {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  background-color: #f8eeee;
+  text-align: center;
+  padding: 20px 10px;
+  gap: 10px;
+  margin:0px 17px 0px 17px; 
+  
+}
+
+.cat img {
+  width: 64px;
+  height: 64px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+.cat span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}

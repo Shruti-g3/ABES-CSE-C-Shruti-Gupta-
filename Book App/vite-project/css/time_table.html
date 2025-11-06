@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Time Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f8f9fa;
+    }
+    h2, h3 {
+      text-align: center;
+      margin: 5px 0;
+    }
+    .timetable {
+      display: grid;
+      grid-template-columns: 120px repeat(8, 1fr);
+      border: 2px solid #333;
+      text-align: center;
+      font-size: 14px;
+    }
+    .timetable div {
+      border: 1px solid #555;
+      padding: 8px;
+      background: #fff;
+    }
+    .header {
+      background: #343a40;
+      color: white;
+      font-weight: bold;
+    }
+    .day {
+      background: #dee2e6;
+      font-weight: bold;
+    }
+    .merge {
+      grid-column: span 8;
+      background: #e9ecef;
+      font-style: italic;
+    }
+    .lunch {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      font-weight: bold;
+      background: #ffc107;
+    }
+  </style>
+</head>
+<body>
+  <h2>ABES ENGINEERING COLLEGE, GHAZIABAD</h2>
+  <h3>CLASS TIME TABLE (CSE - V Sec C)</h3>
+
+  <div class="timetable">
+    <!-- Header Row -->
+    <div class="header">Day / Time</div>
+    <div class="header">08:50-09:40</div>
+    <div class="header">09:40-10:30</div>
+    <div class="header">10:40-11:30</div>
+    <div class="header">11:30-12:20</div>
+    <div class="header">12:20-01:10</div>
+    <div class="header">01:10-02:00</div>
+    <div class="header">02:00-02:50</div>
+    <div class="header">02:50-03:40</div>
+    <div class="header">03:40-04:30</div>
+
+    <!-- Monday -->
+    <div class="day">Monday</div>
+    <div>BCS503 (VSI)</div>
+    <div>BCS504 (SAG)</div>
+    <div>BCS502 (IM)</div>
+    <div>SS (MB)</div>
+    <div>BCS501 (DKM)</div>
+    <div class="lunch" rowspan="5">LUNCH</div>
+    <div>BCS552 (IM, SYA)</div>
+    <div>BCS553 (VSI, ST)</div>
+    <div></div>
+
+    <!-- Tuesday -->
+    <div class="day">Tuesday</div>
+    <div>DSA</div>
+    <div></div>
+    <div></div>
+    <div>BCS501 (DKM)</div>
+    <div>BCS501 (DKM)</div>
+    <div>BCS505 (TS)</div>
+    <div>FSD (AJ)</div>
+    <div></div>
+
+    <!-- Wednesday -->
+    <div class="day">Wednesday</div>
+    <div>BCS503 (VSI)</div>
+    <div>BCS504 (SAG)</div>
+    <div class="merge">Domain Training</div>
+    <div>BCS505 (TS)</div>
+    <div>BCS502 (IM)</div>
+    <div>QA/LR (HS)</div>
+    <div></div>
+
+    <!-- Thursday -->
+    <div class="day">Thursday</div>
+    <div>FSD (AJ)</div>
+    <div></div>
+    <div>BCS505 (TS)</div>
+    <div>BCS502 (IM)</div>
+    <div>BCS501 (DKM)</div>
+    <div></div>
+    <div>DSA</div>
+    <div></div>
+
+    <!-- Friday -->
+    <div class="day">Friday</div>
+    <div>BCS502 (IM)</div>
+    <div>BCS503 (VSI)</div>
+    <div>BCS503 (VSI)</div>
+    <div>BCS551 (DKM, BK)</div>
+    <div></div>
+    <div>BCS504 (SAG)</div>
+    <div>AAI (DMP, APS)</div>
+    <div></div>
+  </div>
+</body>
+</html>

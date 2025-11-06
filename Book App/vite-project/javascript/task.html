@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+        <p class="name"></p>
+    <script>
+        const student = 
+        [
+            s1 = {
+            "name":'Shruti',
+            'branch':'CSE',
+            'roll':1
+        },
+         s2 = {
+            "name":'Yash',
+            'branch':'IT',
+            'roll':1
+         },
+        s3 = {
+            "name":'raman',
+            'branch':'CSE',
+            'roll':3
+         },
+            s4 = {
+            "name":'Anshika',
+            'branch':'CS',
+            'roll':4
+         },
+            s5 = {
+            "name":'R',
+            'branch':'CS',
+            'roll':5
+         }
+    ]
+
+    let ram = [];
+    
+
+    for(i=0; i<student.length; i++) {
+        if(student[i].branch === "CSE"){
+            ram.push(student[i]);
+        }
+
+    }
+        for(i=0; i<ram.length; i++) {
+        document.getElementsByClassName('name')[i].innerHTML=ram[i].name;
+
+    }
+
+    </script>
+</body>
+</html>
