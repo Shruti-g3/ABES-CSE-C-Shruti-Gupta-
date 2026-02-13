@@ -7,7 +7,7 @@ function App() {
   const API_KEY = "c9eb97d479c1febe8a9e9190fd494be1"
 
   useEffect(() => {
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Ghaziabad&appid=${API_KEY}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=Ballia&appid=${API_KEY}&units=metric`)
       .then(res => {
         if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
         return res.json();
